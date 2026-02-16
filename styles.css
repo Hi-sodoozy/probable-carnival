@@ -267,7 +267,7 @@ main {
   font-weight: 700;
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   letter-spacing: -0.03em;
-  line-height: 1.15;
+  line-height: 1.05;
 }
 
 .hero-title-line1,
@@ -276,7 +276,7 @@ main {
 }
 
 .hero-title-line2 {
-  margin-top: 0.15em;
+  margin-top: 0;
 }
 
 .hero-actions {
@@ -331,39 +331,6 @@ main {
 .btn-secondary:hover {
   border-color: var(--blue);
   background: rgba(15, 23, 42, 0.8);
-}
-
-.hero-arrow {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.hero-arrow-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  background: var(--lime);
-  color: var(--text-dark);
-  cursor: pointer;
-  transition: background-color 0.18s ease, transform 0.18s ease;
-}
-
-.hero-arrow-pill:hover {
-  background: var(--lime-hover);
-  transform: translateY(2px);
-}
-
-.hero-arrow-icon {
-  width: 16px;
-  height: 16px;
-  border-left: 2px solid var(--text-dark);
-  border-bottom: 2px solid var(--text-dark);
-  transform: rotate(-45deg);
-  margin-top: -2px;
 }
 
 .hero-right {
@@ -517,6 +484,13 @@ main {
   font-size: 1.25rem;
 }
 
+.todo-support {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  color: rgba(15, 23, 42, 0.8);
+  line-height: 1.5;
+}
+
 .todo-quote {
   margin-top: 1.2rem;
   font-size: 0.9rem;
@@ -537,6 +511,7 @@ main {
 
 .todo-cta {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .section-two-col-right-title {
@@ -639,6 +614,7 @@ main {
 
 .card-footer {
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .btn-card {
@@ -713,6 +689,9 @@ main {
 }
 
 .need-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: var(--sand);
   color: var(--text-dark);
   border-radius: 18px;
@@ -750,6 +729,10 @@ main {
 
 .need-list li {
   margin-bottom: 0.25rem;
+}
+
+.need-card .btn-need {
+  align-self: center;
 }
 
 .btn-need {
@@ -865,7 +848,10 @@ main {
 }
 
 .btn-submit {
-  margin-top: 0.5rem;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Services page */
