@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
   <title>Enabled – Connect your business with your customers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap"
     rel="stylesheet"
@@ -16,10 +14,9 @@
 </head>
 <body>
   <div class="shell">
-    <!-- Header / Nav -->
     <header class="site-header">
       <div class="site-header-inner">
-        <a href="#hero" class="brand">
+        <a href="index.html#hero" class="brand">
           <div class="brand-mark" aria-hidden="true"></div>
           <div>
             <div class="brand-text-primary">Enabled</div>
@@ -27,7 +24,6 @@
           </div>
         </a>
 
-        <!-- Mobile nav toggle (CSS only) -->
         <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="Toggle navigation">
         <label for="navToggle" class="nav-toggle" aria-hidden="true">
           <span></span>
@@ -35,52 +31,39 @@
         </label>
 
         <nav class="nav" id="siteNav" aria-label="Main navigation">
-          <a href="#business-assessment">Business Assessment</a>
-          <a href="#services">Services</a>
-          <a href="#referrals">Referrals</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#contact" class="nav-cta">Let’s talk</a>
+          <a href="index.html#business-assessment">Business Assessment</a>
+
+          <div class="nav-dropdown">
+            <a href="services.html" class="nav-dropdown-trigger">Services</a>
+            <div class="nav-dropdown-panel">
+              <a href="services.html#website">Website</a>
+              <a href="services.html#socials">Socials</a>
+              <a href="services.html#podcasts">Podcasts</a>
+              <a href="services.html#industry-updates">Industry Updates</a>
+              <a href="services.html#phone-messaging">Phone Messaging</a>
+            </div>
+          </div>
+
+          <a href="index.html#referrals">Referrals</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact" class="nav-cta">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- HERO: “Connect your business with your customers” -->
+      <!-- HERO: Connect your business / with your customers - always at top -->
       <section id="hero" class="section hero">
         <div class="section-inner hero-inner">
-          <div>
-            <div class="hero-tag">
-              <span class="hero-tag-dot"></span>
-              <span>Confident. Clear. Human.</span>
-            </div>
-
-            <h1 class="hero-title">Connect your business<br />with your customers</h1>
-
-            <p class="hero-subtitle">
-              Everything you need to sound, look and feel professional across
-              your website, audio, video and internal communications – without adding
-              “do the marketing” to your own to‑do list.
-            </p>
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="hero-title-line1">Connect your business</span><br />
+              <span class="hero-title-line2">with your customers</span>
+            </h1>
 
             <div class="hero-actions">
-              <a href="#business-assessment" class="btn-primary">
-                Book a business assessment
-              </a>
-              <a href="#services" class="btn-secondary">
-                Explore services
-              </a>
-            </div>
-
-            <div class="hero-meta" aria-hidden="true">
-              <div>
-                <span class="hero-meta-item-label">For</span>
-                <span class="hero-meta-item-value">Busy, growing businesses</span>
-              </div>
-              <div>
-                <span class="hero-meta-item-label">What you get</span>
-                <span class="hero-meta-item-value">Websites, audio, video &amp; comms done for you</span>
-              </div>
+              <a href="#business-assessment" class="btn-primary">Book a business assessment</a>
+              <a href="#services" class="btn-secondary">Explore services</a>
             </div>
 
             <div class="hero-arrow">
@@ -90,116 +73,89 @@
             </div>
           </div>
 
-          <aside class="hero-right" aria-label="Snapshot of how Enabled helps">
+          <aside class="hero-right" aria-label="How Enabled helps">
             <div class="hero-panel">
-              <div class="hero-panel-heading">Core outcome</div>
-              <div class="hero-panel-main">
-                “I know what I’m doing. I’m easy to work with. Let’s move.”
-              </div>
               <p class="hero-panel-body">
-                Enabled becomes an extension of your team – creating, producing and
-                managing the media and communications your business needs to grow,
-                while you stay focused on running it.
+                Enabled is an extension of your team. We create, produce and manage your media and communications while you stay focused on running your business.
               </p>
             </div>
           </aside>
         </div>
       </section>
 
-      <!-- Ticker: continuous capabilities -->
-      <section id="capabilities" class="ticker" aria-label="Capabilities marquee">
+      <!-- Ticker: no bubbles, plain text -->
+      <section id="capabilities" class="ticker" aria-label="Capabilities">
         <div class="ticker-inner">
           <div class="ticker-track">
-            <!-- First sequence -->
-            <div class="ticker-segment">
-              <span class="ticker-pill">Websites</span>
-              <span class="ticker-pill">Podcasts</span>
-              <span class="ticker-pill">Phone Audio</span>
-              <span class="ticker-pill">Internal &amp; External Comms</span>
-              <span class="ticker-pill">Video Content</span>
-              <span class="ticker-pill">Content Strategy</span>
-              <span class="ticker-pill">Project Management</span>
-              <span class="ticker-pill">Logos &amp; Visual Branding</span>
-              <span class="ticker-pill">Socials</span>
-              <span class="ticker-pill">Blogs &amp; FAQs</span>
-              <span class="ticker-pill">Direct Marketing</span>
-              <span class="ticker-pill">Audio Advertising</span>
-              <span class="ticker-dot"></span>
-            </div>
-
-            <!-- Duplicate sequence to avoid empty gaps -->
-            <div class="ticker-segment" aria-hidden="true">
-              <span class="ticker-pill">Websites</span>
-              <span class="ticker-pill">Podcasts</span>
-              <span class="ticker-pill">Phone Audio</span>
-              <span class="ticker-pill">Internal &amp; External Comms</span>
-              <span class="ticker-pill">Video Content</span>
-              <span class="ticker-pill">Content Strategy</span>
-              <span class="ticker-pill">Project Management</span>
-              <span class="ticker-pill">Logos &amp; Visual Branding</span>
-              <span class="ticker-pill">Socials</span>
-              <span class="ticker-pill">Blogs &amp; FAQs</span>
-              <span class="ticker-pill">Direct Marketing</span>
-              <span class="ticker-pill">Audio Advertising</span>
-              <span class="ticker-dot"></span>
-            </div>
+            <span class="ticker-segment">Websites</span>
+            <span class="ticker-segment">Podcasts</span>
+            <span class="ticker-segment">Phone Audio</span>
+            <span class="ticker-segment">Internal &amp; External Comms</span>
+            <span class="ticker-segment">Video Content</span>
+            <span class="ticker-segment">Content Strategy</span>
+            <span class="ticker-segment">Project Management</span>
+            <span class="ticker-segment">Logos &amp; Visual Branding</span>
+            <span class="ticker-segment">Socials</span>
+            <span class="ticker-segment">Blogs &amp; FAQs</span>
+            <span class="ticker-segment">Direct Marketing</span>
+            <span class="ticker-segment">Audio Advertising</span>
+            <span class="ticker-segment">Websites</span>
+            <span class="ticker-segment">Podcasts</span>
+            <span class="ticker-segment">Phone Audio</span>
+            <span class="ticker-segment">Internal &amp; External Comms</span>
+            <span class="ticker-segment">Video Content</span>
+            <span class="ticker-segment">Content Strategy</span>
+            <span class="ticker-segment">Project Management</span>
+            <span class="ticker-segment">Logos &amp; Visual Branding</span>
+            <span class="ticker-segment">Socials</span>
+            <span class="ticker-segment">Blogs &amp; FAQs</span>
+            <span class="ticker-segment">Direct Marketing</span>
+            <span class="ticker-segment">Audio Advertising</span>
           </div>
         </div>
       </section>
 
-      <!-- “Get it off your chest / desk” -->
+      <!-- Referral banner -->
+      <section class="section section-referral" id="referrals">
+        <div class="section-inner section-referral-inner">
+          <p class="referral-text">Get 20% off with every referral*</p>
+          <a href="index.html#referrals" class="referral-link">See the conditions here</a>
+        </div>
+      </section>
+
+      <!-- Get it off your chest / desk -->
       <section class="section section-two-col" id="about">
         <div class="section-inner">
-          <!-- Left: to‑do list style -->
           <div>
             <div class="todo-card">
               <div class="todo-inner">
-                <div class="todo-label">Your to‑do list</div>
-
                 <div class="todo-item">
-                  <div class="todo-tick">
-                    <div class="todo-tick-icon"></div>
-                  </div>
+                  <div class="todo-tick"><div class="todo-tick-icon"></div></div>
                   <div class="todo-text">Get it off your chest</div>
                 </div>
-
                 <div class="todo-item">
-                  <div class="todo-tick">
-                    <div class="todo-tick-icon"></div>
-                  </div>
+                  <div class="todo-tick"><div class="todo-tick-icon"></div></div>
                   <div class="todo-text">Get it off your desk</div>
                 </div>
-
                 <div class="todo-quote">
-                  <div class="todo-quote-line">
-                    “I’ve got a blank space, baby…”
-                  </div>
                   <div class="todo-quote-author">Taylor Swift</div>
                   <div class="todo-quote-meta">(Misquoted lyrics)</div>
                 </div>
-
                 <div class="todo-cta">
                   <a href="#contact" class="btn-primary">Tell me more</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Right: explanatory copy -->
           <div>
-            <div class="section-two-col-right-heading">
-              Done‑for‑you media &amp; communications
-            </div>
             <h2 class="section-two-col-right-title">
-              Everything you should be doing to connect with your customers – without doing it yourself.
+              Connect with your customers without doing it yourself.
             </h2>
             <p class="section-two-col-right-body">
               Enabled is an extension of your business that creates, produces and delivers
               high‑quality media and communications so you can stay focused on the work only you can do.
             </p>
-            <p class="section-two-col-right-body">
-              Clients have tapped into Enabled to create:
-            </p>
+            <p class="section-two-col-right-body">Clients have tapped into Enabled to create:</p>
             <ul class="ul-clean">
               <li>Podcasts</li>
               <li>Communications packages</li>
@@ -212,60 +168,46 @@
         </div>
       </section>
 
-      <!-- How can Enabled help? -->
+      <!-- How can Enabled help? (no "Ways to work together", no Step 1/2/3) -->
       <section class="section section-help" id="business-assessment">
         <div class="section-inner">
           <header class="section-help-header">
-            <div class="section-help-kicker">Ways to work together</div>
             <h2 class="section-help-title">How can Enabled help?</h2>
           </header>
-
           <div class="cards-grid">
-            <!-- Box 1: Business Assessment -->
             <article class="card">
               <div>
                 <div class="card-header">
-                  <div class="card-eyebrow">Step 1</div>
                   <h3 class="card-title">Business Assessment</h3>
                 </div>
                 <div class="card-body">
-                  <p>
-                    We’ll look at what you’re doing now and provide suggestions in a clear
-                    statement of advice.
-                  </p>
+                  <p>We'll look at what you're doing and provide suggestions in a statement of advice.</p>
                   <ul>
-                    <li>Is everything aligned with your goals and customers?</li>
+                    <li>Is everything aligned with your goal/customers?</li>
                     <li>Identify missed opportunities</li>
-                    <li>Suggest improvements to what you’re already doing</li>
+                    <li>Suggest improvements to what you're already doing</li>
                   </ul>
-                  <p>
-                    Ready to improve? Enabled will make it happen.
-                  </p>
+                  <p>Ready to improve? Enabled will make it happen.</p>
                 </div>
               </div>
               <div class="card-footer">
                 <a href="#contact" class="btn-card btn-card-primary">Book me in!</a>
               </div>
             </article>
-
-            <!-- Box 2: Get Started -->
             <article class="card" id="services">
               <div>
                 <div class="card-header">
-                  <div class="card-eyebrow">Step 2</div>
                   <h3 class="card-title">Get Started</h3>
                 </div>
                 <div class="card-body">
-                  <p>
-                    Enabled will create everything so you look good from the beginning.
-                  </p>
+                  <p>Enabled will create everything so you look good from the beginning.</p>
                   <ul>
                     <li>Website development</li>
                     <li>Website content</li>
-                    <li>Phone on hold messaging</li>
+                    <li>Phone On Hold Messaging</li>
                     <li>Podcasts</li>
                     <li>Video content</li>
-                    <li>eDMs and newsletters</li>
+                    <li>eDMS and Newsletters</li>
                     <li>Socials</li>
                     <li>The list goes on!</li>
                   </ul>
@@ -275,53 +217,125 @@
                 <a href="#contact" class="btn-card btn-card-secondary">Start here</a>
               </div>
             </article>
-
-            <!-- Box 3: Get It Done -->
-            <article class="card" id="referrals">
+            <article class="card">
               <div>
                 <div class="card-header">
-                  <div class="card-eyebrow">Step 3</div>
                   <h3 class="card-title">Get It Done</h3>
                 </div>
                 <div class="card-body">
-                  <p>
-                    Project‑to‑project or ongoing, Enabled makes everything happen whilst
-                    aligning with your current business strategy.
-                  </p>
+                  <p>Project‑to‑project or ongoing, Enabled makes everything happen whilst aligning with your current business strategy.</p>
                   <ul>
                     <li>Campaigns and content calendars delivered</li>
                     <li>Assets created, published and maintained</li>
                     <li>Coordination with your team and partners</li>
                   </ul>
-                  <p>
-                    Don’t have time? Don’t have resources? Enabled does.
-                  </p>
+                  <p>Don't have time? Don't have resources? Enabled does.</p>
                 </div>
               </div>
               <div class="card-footer">
-                <a href="#contact" class="btn-card btn-card-primary">Let’s get it done</a>
+                <a href="#contact" class="btn-card btn-card-primary">Let's get it done</a>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Simple Contact anchor (placeholder) -->
-      <section class="section section-contact" id="contact">
+      <!-- What Do I Need? -->
+      <section class="section section-need" id="what-do-i-need">
         <div class="section-inner">
-          <h2 class="contact-title">
-            Let’s talk about what you need
-          </h2>
-          <p class="contact-body">
-            Not sure where to start, or know exactly what’s been sitting on your
-            to‑do list for too long? Share a few details and Enabled will come back
-            with a recommendation.
+          <header class="section-need-header">
+            <h2 class="section-need-title">What Do I Need?</h2>
+            <p class="section-need-subtitle">Every business is different, but every business can benefit from…</p>
+          </header>
+
+          <div class="need-grid">
+            <article class="need-card" id="need-website">
+              <h3 class="need-card-title">Website</h3>
+              <p class="need-card-tagline">A place to send customers</p>
+              <ul class="need-list">
+                <li>Tell everyone what you do</li>
+                <li>Avoid social algorithms</li>
+                <li>Give customers and referrers somewhere to go</li>
+                <li>Google and AI can't put you forward without one</li>
+              </ul>
+              <a href="services.html#website" class="btn-need">I need a website</a>
+            </article>
+
+            <article class="need-card" id="need-socials">
+              <h3 class="need-card-title">Socials</h3>
+              <p class="need-card-tagline">The voice of your brand</p>
+              <ul class="need-list">
+                <li>Give your business personality</li>
+                <li>An extension of your business, not a second website</li>
+                <li>Only use the platforms that work for your business</li>
+              </ul>
+              <a href="services.html#socials" class="btn-need">I need socials</a>
+            </article>
+
+            <article class="need-card" id="need-podcasts">
+              <h3 class="need-card-title">Podcasts</h3>
+              <p class="need-card-tagline">Share your knowledge</p>
+              <p class="need-card-note">We only recommend podcasts for businesses that can achieve ROI.</p>
+              <ul class="need-list">
+                <li>Establish yourself as an industry expert</li>
+                <li>Educate customers</li>
+                <li>Show you're human</li>
+              </ul>
+              <a href="services.html#podcasts" class="btn-need">I need a podcast</a>
+            </article>
+
+            <article class="need-card" id="need-industry-updates">
+              <h3 class="need-card-title">Industry Updates</h3>
+              <p class="need-card-tagline">Keep your branding consistent</p>
+              <ul class="need-list">
+                <li>Send out industry comms packs with every update, new product</li>
+                <li>Share collateral and branding so everything's current</li>
+              </ul>
+              <a href="services.html#industry-updates" class="btn-need">I need industry updates</a>
+            </article>
+
+            <article class="need-card" id="need-phone-messaging">
+              <h3 class="need-card-title">Phone Messaging</h3>
+              <p class="need-card-tagline">Sound good over the phone</p>
+              <ul class="need-list">
+                <li>Welcome Greetings, Voicemail messages and On Hold Messages</li>
+                <li>Sound professional and promote your business while customers wait on hold</li>
+              </ul>
+              <a href="services.html#phone-messaging" class="btn-need">I need phone messaging</a>
+            </article>
+          </div>
+
+          <p class="need-disclaimer">
+            You might not need everything (right now). Don't waste time and money on anything not aligned to your business and strategy.
           </p>
 
-          <!-- Placeholder for your preferred form / integration -->
-          <p class="contact-note">
-            Add your preferred contact form, booking link or email call‑to‑action here.
-          </p>
+          <div class="need-cta-block">
+            <p class="need-cta-text">Don't know what you need? Start with a Business Assessment.</p>
+            <a href="#contact" class="btn-primary">Book a Business Assessment</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-contact" id="contact">
+        <div class="section-inner">
+          <h2 class="contact-title">Contact us</h2>
+          <!-- Formspree: sign up at formspree.io, create a form, set notification email to iain@iainduguid.com, then replace YOUR_FORM_ID below with your form ID -->
+          <form class="contact-form" action="https://formspree.io/f/xbdayyne" method="post">
+            <div class="form-row">
+              <label for="contact-name">Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-row">
+              <label for="contact-message">Message <span class="required">*</span></label>
+              <textarea id="contact-message" name="message" required rows="5" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-submit">Send message</button>
+          </form>
         </div>
       </section>
     </main>
