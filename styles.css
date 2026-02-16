@@ -137,17 +137,19 @@ main {
 .nav-cta {
   padding: 0.5rem 1.2rem;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(148, 163, 184, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.6);
   background: transparent;
   color: var(--text-light-primary);
-  font-size: 0.85rem;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.18s ease;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .nav-cta:hover {
-  background: var(--blue);
   border-color: var(--blue);
-  transform: translateY(-1px);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--text-light-secondary);
 }
 
 /* Services dropdown */
@@ -275,7 +277,7 @@ main {
   font-weight: 700;
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   letter-spacing: -0.03em;
-  line-height: 0.9;
+  line-height: 0.85;
 }
 
 .hero-title-line1,
@@ -284,7 +286,7 @@ main {
 }
 
 .hero-title-line2 {
-  margin-top: -0.02em;
+  margin-top: -0.12em;
 }
 
 .hero-actions {
