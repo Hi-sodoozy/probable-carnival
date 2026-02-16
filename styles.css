@@ -137,9 +137,17 @@ main {
 .nav-cta {
   padding: 0.5rem 1.2rem;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(148, 163, 184, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(59, 130, 246, 0.2);
   color: var(--text-light-primary);
   font-size: 0.85rem;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.18s ease;
+}
+
+.nav-cta:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  transform: translateY(-1px);
 }
 
 /* Services dropdown */
@@ -267,7 +275,7 @@ main {
   font-weight: 700;
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   letter-spacing: -0.03em;
-  line-height: 1.05;
+  line-height: 0.95;
 }
 
 .hero-title-line1,
@@ -390,19 +398,21 @@ main {
   }
 }
 
-/* Referral banner */
+/* Referral strip – same proportions as ticker */
 
 .section-referral {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background-color: var(--midnight);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  background-color: var(--deep-teal);
+  border-top: 1px solid rgba(15, 23, 42, 0.3);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.3);
 }
 
 .section-referral-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem 1rem;
 }
 
@@ -481,14 +491,7 @@ main {
 .todo-text {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.todo-support {
-  margin: 1rem 0 0;
-  font-size: 1rem;
-  color: rgba(15, 23, 42, 0.8);
-  line-height: 1.5;
+  font-size: 1.55rem;
 }
 
 .todo-quote {
@@ -733,6 +736,8 @@ main {
 
 .need-card .btn-need {
   align-self: center;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .btn-need {
